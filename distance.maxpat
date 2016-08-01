@@ -32,13 +32,29 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"id" : "obj-144",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 272.5, 70.5, 60.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 417.0, 167.0, 60.0, 20.0 ],
+					"text" : "MIDI in"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-143",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 499.0, 278.0, 150.0, 20.0 ],
+					"patching_rect" : [ 23.0, 442.5, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 554.0, 262.0, 60.0, 20.0 ],
+					"presentation_rect" : [ 417.0, 282.0, 60.0, 20.0 ],
 					"text" : "MIDI out"
 				}
 
@@ -323,8 +339,10 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Footpedal or other MIDI control input",
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 20.0,
+					"hint" : "MIDI control input",
 					"id" : "obj-28",
 					"items" : [ "IAC Driver Bus 1", ",", "to MaxMSP 1", ",", "to MaxMSP 2" ],
 					"labelclick" : 1,
@@ -333,7 +351,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 70.5, 123.5, 21.0 ]
+					"patching_rect" : [ 149.0, 70.5, 123.5, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 483.0, 167.0, 209.5, 29.0 ]
 				}
 
 			}
@@ -367,8 +387,10 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "MIDI output to Sho patch",
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 20.0,
+					"hint" : "output to MIDI sho",
 					"id" : "obj-2",
 					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
@@ -377,9 +399,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 23.0, 413.5, 100.0, 21.0 ],
+					"patching_rect" : [ 23.0, 413.5, 100.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 620.0, 262.0, 100.0, 21.0 ]
+					"presentation_rect" : [ 483.0, 282.0, 209.5, 29.0 ]
 				}
 
 			}
@@ -461,8 +483,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 625.0, 77.5, 150.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 432.0, 129.0, 160.0, 33.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 432.0, 61.0, 118.0, 47.0 ],
 					"text" : "^^^^ make sure you turn the audio on here"
 				}
 
@@ -480,7 +502,7 @@
 					"patching_rect" : [ 23.0, 626.0, 150.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 432.0, 187.0, 204.0, 33.0 ],
+					"presentation_rect" : [ 432.0, 211.0, 204.0, 33.0 ],
 					"text" : "space bar to play through sequence\n(only #1-4 are programmed in now)"
 				}
 
@@ -815,7 +837,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 625.0, 29.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 432.0, 84.0, 45.0, 45.0 ]
+					"presentation_rect" : [ 432.0, 16.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -1696,11 +1718,13 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "reset to the beginning of the piece",
 					"bgcolor" : [ 0.0, 0.806332, 0.0, 1.0 ],
 					"bgovercolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hint" : "back to beginning",
 					"id" : "obj-56",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -1710,7 +1734,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 69.5, 42.5, 49.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 432.0, 16.0, 49.0, 49.0 ],
+					"presentation_rect" : [ 563.25, 16.0, 49.0, 49.0 ],
 					"rounded" : 45.0,
 					"text" : "Reset"
 				}
@@ -1718,11 +1742,13 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "turn all MIDI notes off",
 					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"bgovercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hint" : "!!!",
 					"id" : "obj-55",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -1732,7 +1758,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 69.5, 212.5, 49.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 510.0, 16.0, 49.0, 49.0 ],
+					"presentation_rect" : [ 643.5, 16.0, 49.0, 49.0 ],
 					"rounded" : 45.0,
 					"text" : "Panic!"
 				}
@@ -1956,27 +1982,6 @@
 				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/abstractions/midi",
 				"patcherrelativepath" : "../../abstractions/midi",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pitches",
-				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/CLIENTS/Takemitsu_Distance",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "noteToPitch",
-				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/CLIENTS/Takemitsu_Distance",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sequences",
-				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/CLIENTS/Takemitsu_Distance",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ]
