@@ -27,7 +27,7 @@
 26, "0 an3 cn5";
 27, "2 fs4 fs5";
 28, "0 fs4 fs5";
-29, "5 gs4 dn5 en4 fs4 cn5";
+29, "0 gs4, 5 gs4 dn5 en4 fs4 cn5";
 30, "0 gs4 dn5 en4 fs4 cn5, 2 gs4";
 31, "0 gs4";
 32, "4 bn3 an4 cs4 gn4 cn5";
@@ -41,11 +41,11 @@
 40, "0 bn4 cs5 dn5 en4";
 41, "2 an3 gs4";
 42, "2 an4 cs4, 0 an3 gs4";
-43, "0 an4, 3 en5 cs4 gn4 fs5";
+43, "0 an4 cn5, 3 en5 cs4 gn4 fs5";
 44, "0 en5 cs4 gn4 fs5, 2 cs4";
 45, "0 cs4, 2 cs5";
 46, "1 an3 bn4 gn4";
-47, "0 cs5 gn4, 3 cs4 cn5";
+47, "0 bn4 cs5 gn4, 3 cs4 cn5";
 48, "4 bn3 gs4 en4";
 49, "0 an3 bn3 gs4 cs4 en4 cn5, 2 bn3";
 50, "3 dn4 an4 cs5 gn4 fs5";
