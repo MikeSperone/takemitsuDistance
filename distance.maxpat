@@ -8,9 +8,9 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 405.0, 141.0, 875.0, 705.0 ],
+		"rect" : [ 31.0, 45.0, 788.0, 592.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -872,7 +872,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 26.0, 875.0, 679.0 ],
+						"rect" : [ 0.0, 26.0, 788.0, 566.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1683,7 +1683,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 201.25, 413.5, 105.0, 20.0 ],
+					"patching_rect" : [ 201.25, 383.5, 105.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -1910,7 +1910,7 @@
 					"destination" : [ "obj-61", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 73.0, 444.25, 210.75, 444.25 ],
+					"midpoints" : [ 73.0, 448.25, 210.75, 448.25 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
