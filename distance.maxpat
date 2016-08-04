@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 151.0, 80.0, 904.0, 515.0 ],
+		"rect" : [ 77.0, 110.0, 967.0, 515.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -170,6 +170,7 @@
 					"patching_rect" : [ 404.0, 478.0, 200.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 431.5, 164.0, 200.0, 20.0 ],
+					"spacing_y" : 0.0,
 					"tabs" : [ "MIDI out", "Native audio" ],
 					"valign" : 2
 				}
@@ -221,7 +222,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 247.0, 461.0, 79.0, 20.0 ],
@@ -719,7 +720,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 172.0, 315.0, 25.0, 25.0 ]
+									"patching_rect" : [ 143.0, 324.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -746,7 +747,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 31.0, 284.0, 32.5, 20.0 ],
+									"patching_rect" : [ 31.0, 293.0, 32.5, 20.0 ],
 									"text" : "i"
 								}
 
@@ -774,7 +775,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 31.0, 140.0, 79.0, 20.0 ],
+									"patching_rect" : [ 31.0, 140.0, 105.0, 20.0 ],
 									"text" : "route symbol"
 								}
 
@@ -870,7 +871,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 315.0, 25.0, 25.0 ]
+									"patching_rect" : [ 31.0, 324.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -899,6 +900,16 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-110", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-116", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 126.5, 285.5, 40.5, 285.5 ],
+									"source" : [ "obj-110", 1 ]
 								}
 
 							}
@@ -961,7 +972,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 40.5, 103.0, 181.5, 103.0 ],
+									"midpoints" : [ 40.5, 103.0, 152.5, 103.0 ],
 									"source" : [ "obj-80", 0 ]
 								}
 
@@ -1014,7 +1025,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 26.0, 904.0, 489.0 ],
+						"rect" : [ 640.0, 153.0, 640.0, 505.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1034,6 +1045,7 @@
 						"digest" : "",
 						"tags" : "",
 						"showontab" : 1,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1058,7 +1070,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 94.25, 409.0, 50.0, 18.0 ],
-									"text" : "84 58"
+									"text" : "83 58"
 								}
 
 							}
@@ -1468,8 +1480,8 @@
 													"numinlets" : 4,
 													"numoutlets" : 4,
 													"outlettype" : [ "bang", "bang", "bang", "" ],
-													"patching_rect" : [ 184.0, 160.0, 98.125, 20.0 ],
-													"text" : "sel n f s"
+													"patching_rect" : [ 184.0, 160.0, 97.75, 20.0 ],
+													"text" : "sel n b s"
 												}
 
 											}
@@ -1496,8 +1508,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 100.0, 160.0, 20.0 ],
-													"text" : "regexp ([abcdefg])([nsf])(\\\\d)"
+													"patching_rect" : [ 50.0, 100.0, 163.0, 20.0 ],
+													"text" : "regexp ([abcdefg])([nsb])(\\\\d)"
 												}
 
 											}
@@ -2400,6 +2412,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2531,8 +2552,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "panic.maxpat",
-				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/abstractions/midi",
-				"patcherrelativepath" : "../../abstractions/midi",
+				"bootpath" : "/Users/Mike/Documents/Programming/Audio/MaxMSP/Max6 patches/CLIENTS/takemitsuDistance",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
